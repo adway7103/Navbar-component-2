@@ -1,0 +1,97 @@
+nav{
+    background-color: black;
+    height: 80px;
+    width: 100%;
+}
+.logo{
+    color: white;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace ;
+    line-height: 80px;
+    padding: 0 20px;
+    font-size: 35px;
+}
+*{
+    text-decoration: none;
+    padding: 0px;
+    margin:0;
+    list-style: none;
+    box-sizing: border-box;
+}
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin:0 5px
+}
+nav ul li a{
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    margin:20px;
+    padding: 10px;
+    text-transform: uppercase;
+}
+a:hover{
+    background-color: rgb(95, 95, 95);
+}
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    margin-top: 25px;
+    display: none;
+}
+#check{
+    display: none;
+}
+@media(max-width:952px)
+{
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 20px;
+        color: white;
+        font-weight: bold;
+    }
+@media (max-width:858px) {
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height:100vh;
+        background-color: rgb(39, 39, 39);
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+    }
+    nav ul li a{
+        font-size: 20px;
+        font-weight: bold;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    a:hover{
+        color: black;
+        background-color: rgb(39, 39, 39);
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
+section{
+    height: 100%;
+    background-color: rgb(212, 212, 212);
+}
